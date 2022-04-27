@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Lavaro</title>
+		<link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+		<main>
+			<section class="glass">
+			<!-- Leftside start -->
+				<div class="dashboard">
+					<div class="user">
+						<img src="./images/Lavaro.png" alt="" />
+					</div>
+					<div class="links">
+		    <!-- Here Lies Call method -->
+						<div class="link">
+						<form action="/Call" method="GET">
+						<h2>
+							<label> Make a Call: </label>
+						</h2>
+							<button class="gradient-button gradient-button-2" onclick="makeCall()">  Call  </button>
+						</form>
+						</div>
+			<!-- Here Lies sendSMS method -->
+					<div class="link">
+						<form action="/sendSMS" method="GET">
+							<h2>
+								<label> Send a message: </label>
+							</h2>
+							<button  class="gradient-button gradient-button-2" onclick="sendSMS()"> Send </button>
+						</form>
+					</div>
+			<!--  End of send SMS -->
+			
+			<!--  Here lies Voice Mail method-->
+					<div class="link">
+						<form action="./recordings.html"> 
+					<h2>
+						<label> Voicemails </label>
+					</h2>	
+						<button class="gradient-button gradient-button-2" onclick= smsNotification> Check recordings </button>
+						</form>
+					</div>
+					</div>	
+					<div class="pro">
+					<h2>Join Lavaro</h2>	
+				</div>
+				</div>
+				
+				<!-- left side end -->
+				<!-- right side start -->
+				<div class="games">
+				<div class="status">
+					<h1>Active</h1>
+					<input type="text" />
+				</div>
+				<div class="cards">
+					
+				</div>
+				</div>
+				<!-- right side end -->
+			</section>
+		</main>
+    </body>
+</html>
