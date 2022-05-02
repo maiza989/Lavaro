@@ -35,7 +35,7 @@ public class OutCallHandler {
 		try {
 			String c = "\nCall has been made from: "+ TWILIO_NUMBER + " to " + MY_CELLPHONE_NUMBER;
 			String s = "\n------------------------------------------";
-			File file = new File("./twlio-voicemail/src/main/resources/static/CallsOut.html");
+			File file = new File("./src/main/resources/static/CallsOut.html");
 			//PrintStream stream = new PrintStream(file);
 			FileWriter fw = new FileWriter(file, true);
 			BufferedWriter bw = new BufferedWriter(fw);

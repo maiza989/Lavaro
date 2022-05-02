@@ -119,7 +119,7 @@ public class VoicemailHandler {
 	            //.play(new Play.Builder("/message.m3").build())
 	            .record(new Record.Builder()
 	                .playBeep(true)
-	                .maxLength(10)
+	                .maxLength(30)
 	                .action("/recordings")
 	                .build())
 	                .build().toXml();
@@ -152,11 +152,11 @@ public class VoicemailHandler {
 	            smsNotification)
 	            .create();
 	        
-	        try {
+	        
 				try {
 					String c = "\n" +smsNotification;
 					String s = "\n------------------------------------------";
-					File file = new File("./twlio-voicemail/src/main/resources/static/voicemail.html");
+					File file = new File("./src/main/resources/static/voicemail.html");
 					FileWriter fw = new FileWriter(file, true);
 					BufferedWriter bw = new BufferedWriter(fw);
 					bw.write(c);
@@ -168,9 +168,7 @@ public class VoicemailHandler {
 					  System.out.println("File does not exist");
 					e.printStackTrace();
 				  }
-			} catch (Exception e) {
-				//TODO: handle exception
-			}
+			
 	        			
 	        
 	    }// end of handleRecording

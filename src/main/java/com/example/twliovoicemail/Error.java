@@ -18,7 +18,7 @@ public class Error {
 
 	@PostMapping(value = "/error", produces = "application/xml")
 	@ResponseBody
-	public String handleIncomingCall(){
+	public String handleIncomingCallError(){
 	    return new VoiceResponse.Builder()
 	    		.pause(new Pause.Builder().length(2).build())
 	            .say(new Say.Builder("An error has occured during the call, please call again. GOODBYE").build())

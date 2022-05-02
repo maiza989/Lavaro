@@ -39,7 +39,7 @@ public class SMSHandler {
 		  try {
         String c = "\nA message has been made from: "+ TWILIO_NUMBER + " to " + MY_CELLPHONE_NUMBER;
         String s = "\n------------------------------------------";
-        File file = new File("./twlio-voicemail/src/main/resources/static/text.html");
+        File file = new File("./src/main/resources/static/text.html");
         FileWriter fw = new FileWriter(file, true);
         BufferedWriter bw = new BufferedWriter(fw);
         bw.write(c);
@@ -55,7 +55,7 @@ public class SMSHandler {
          
           
           Message.creator(new PhoneNumber(MY_CELLPHONE_NUMBER),
-                          new PhoneNumber(TWILIO_NUMBER), "Hello, How are you doing?").create();
+                          new PhoneNumber(TWILIO_NUMBER), "You have voicemail from Russell Box").create();
 
           //stream.println("A message has been made from: "+ TWILIO_NUMBER + " to " + MY_CELLPHONE_NUMBER);
           //stream.println("----------------------------------------------");
